@@ -1,0 +1,17 @@
+﻿@model RegisterModel
+
+<form method="post" asp-action="Register" asp-controller="Home">
+    <div>
+        <label asp-for="Name">Name</label>
+        <input asp-for="Name" />
+    </div>
+    <div>
+        <label asp-for="Email">Email</label>
+        <input asp-for="Email" />
+    </div>
+    <div>
+        <label asp-for="Password">Password</label>
+        <input asp-for="Password" />
+    </div>
+    <input type="submit" value="Register" />
+</form>

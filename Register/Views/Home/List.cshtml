@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Register.Models.User>
+
+<form method="get" asp-action="List" asp-controller="Home">
+    @foreach (var item in Model)
+    {
+        <div>
+            <label>Name: @item.UserName</label>
+
+        </div>
+        <div>
+            <label>Email : @item.Email</label>
+
+        </div>
+    }
+
+</form>
